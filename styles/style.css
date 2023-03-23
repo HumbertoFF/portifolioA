@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+#logoHeader {
+  width: 40px;
+}
+.o-header {
+  background: rgb(155, 152, 162);
+  grid-area: header;
+  width: 100%;
+  height: 8vh;
+  position: fixed;
+  z-index: 10;
+}
+.o-main {
+  grid-area: main;
+  font-family: Lucida Sans;
+  margin-top: 8vh;
+  color: white;
+  background-image: linear-gradient(
+    to top,
+    rgb(0, 0, 0) 0%,
+    rgb(30, 30, 30) 25%,
+    rgb(107, 105, 110) 50%,
+    rgb(119, 117, 122) 75%,
+    rgb(155, 152, 162) 100%
+  );
+}
+.o-footer {
+  grid-area: footer;
+  background-color: rgb(0, 0, 0);
+  height: 20vh;
+  width: 100%;
+}
+#navbarNavAltMarkup {
+  background-color: rgb(155, 152, 162);
+}
+a {
+  color: primary;
+}
+#inicio {
+  color: white;
+}
+
+.fotoPessoal {
+  width: 100%;
+  border: 5px;
+  border-radius: 10px;
+}
+#textoPessoal {
+  padding-right: 20px;
+}
+section {
+  padding-top: 10%;
+  margin: 0 0 0 0;
+  text-align: justify;
+}
+.voltarInicio {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  align-self: flex-end;
+  color: rgb(7, 0, 99);
+}
+.iconesRodape {
+  display: flexbox;
+  justify-content: center;
+  align-self: flex-end;
+  height: 100%;
+}
+.icones {
+  margin: 10px 15px 10px 15px;
+  color: rgb(255, 255, 255);
+}
+section > h2 {
+  font-weight: bold;
+}
+span {
+  word-wrap: break-word;
+  text-align: center;
+  align-self: center;
+}
+a {
+  align-self: center;
+}
