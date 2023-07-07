@@ -10,6 +10,7 @@ body {
     "footer footer footer";
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
+  scroll-behavior: smooth;
 }
 #logoHeader {
   width: 40px;
@@ -51,7 +52,11 @@ a {
 #inicio {
   color: white;
 }
-
+.nav-link {
+  border: 5px;
+  border-radius: 10px;
+  border-color: rgb(255, 255, 255);
+}
 .fotoPessoal {
   width: 100%;
   border: 5px;
@@ -62,20 +67,49 @@ a {
 }
 section {
   padding-top: 10%;
-  margin: 0 0 0 0;
+  margin: 0;
   text-align: justify;
 }
-.voltarInicio {
-  margin-left: 50px;
-  margin-bottom: 50px;
+.btn {
+  margin: 0px;
   align-self: flex-end;
-  color: rgb(7, 0, 99);
+  color: rgb(216, 232, 255);
 }
+.btn:after {
+  margin: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(237, 237, 237);
+  transition: margin-top 250ms;
+}
+.btn::hover::after {
+  margin-top: -8px;
+  color: rgb(237, 237, 237);
+}
+
 .iconesRodape {
   display: flexbox;
   justify-content: center;
   align-self: flex-end;
   height: 100%;
+}
+.whats:hover {
+  border: 5px;
+  border-radius: 17px;
+  color: white !important;
+  background-color: rgb(113, 227, 113) !important;
+}
+.email:hover {
+  color: rgba(58, 174, 233) !important;
+}
+.LinkedIn:hover {
+  color: rgb(10, 102, 194) !important;
+  background-color: white;
+  border: 20px;
+  border-radius: 5px;
+}
+.face:hover {
+  color: rgb(72, 103, 170) !important;
 }
 .icones {
   margin: 10px 15px 10px 15px;
