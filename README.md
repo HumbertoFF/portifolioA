@@ -49,11 +49,17 @@ Você também pode abrir diretamente no CodeSandbox, pois já há configuração
 
 📁 Estrutura do Repositório
 📦portifolioA
+
 ├── assets/            # Imagens e mídias
+
 ├── js/                # Scripts JavaScript
+
 ├── styles/            # Arquivos CSS
+
 ├── index.html         # Página principal
+
 ├── README.md          # Documento de apresentação
+
 └── package.json       # Configuração do ambiente (se aplicável)
 
 💡 Próximos Passos
